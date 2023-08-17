@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <title>Kalkulator Segitiga</title>
+</head>
+<body>
+    <header>
+        <h1>Luas Dan Keliling Segitiga</h1>
+        <h2>Rumus</h2>
+        <img src="Rumus.png" width="450" height="300">
+    </header>
+    <main>
+        <section class="input-section">
+            <label for="tinggi-input">Tinggi Segitiga</label>
+            <input type="number" id="tinggi-input" placeholder="0">
+            <label for="alas-input">Alas Segitiga</label>
+            <input type="number" id="alas-input" placeholder="0">
+            </section>
+
+        <button onclick="Luas()">Hitung Luas</button>  
+
+           <section>
+               <label for="sisi-A">sisi A</label>
+               <input type="number" id="sisi-A" placeholder="0">
+               <label for="sisi-B">sisi B</label>
+               <input type="number" id="sisi-B" placeholder="0">
+               <label for="sisi-C">sisi C</label>
+               <input type="number" id="sisi-C" placeholder="0">
+           </section>
+
+            <section>
+                <button onclick="Keliling()">Hitung Keliling</button>
+                <button onclick="reset()">Reset</button>
+            </section>               
+        </section>      
+    </main>
+    <footer>
+        <section class="display">
+            <label for="hasil-hitung">Hasil</label>
+            <span>=</span>
+            <span id="hasil" tipe="number" placeholder="0">?</span>
+            
+        </section>
+    </footer>
+</body>
+</html>
